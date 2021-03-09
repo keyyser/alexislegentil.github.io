@@ -1,0 +1,395 @@
+:root {
+    font-size: 30px;
+}
+
+.ocean {
+    --ca: #86d2df;
+    --cb: #3d3e6e;
+    --cb-t: #282550a6;
+    --cc: #20357a;
+    --cd: #305894;
+    --ce: #5a96b8;
+    --cf: #65b2ca;
+    --cg: #86d2df;
+
+    --ga1: #65b2ca;
+    --ga2: #86d2df;
+
+    --calt1: #4e3d6e;
+    --calt2: #693765;
+}
+
+.jade {
+    --ca: white;
+    --cb: #71ee96;
+    --cb-t: #73f3a4a6;
+    --cc: #5aeeb0;
+    --cd: #2da569;
+    --ce: #2b8f79;
+    --cf: #2b8f79;
+    --cg: #163333;
+
+    --ga1: #1b6e5c;
+    --ga2: #163333;
+
+    --calt1: #75ffc6;
+    --calt2: #e03cbc;
+}
+
+.sepia {
+    --ca: #dfb586;
+    --cb: #6e3d3d;
+    --cb-t: #502525a6;
+    --cc: #7a2b20;
+    --cd: #945430;
+    --ce: #b8785a;
+    --cf: #ca8a65;
+    --cg: #dfb586;
+
+    --ga1: #ca8a65;
+    --ga2: #dfb586;
+
+    --calt1: #6e3d3d;
+    --calt2: #693752;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--cf);
+}
+
+.content {
+    min-height: calc(100vh - 4.8rem);
+    padding-top: 0.1rem;
+    background-attachment:fixed;
+    background-image: linear-gradient(147deg, var(--ga1) 0%, var(--ga2) 24%);
+    background-color: var(--cg);
+    padding-bottom: 3rem;
+}
+
+.title {
+    text-align: center;
+    color: var(--ce);
+    font-family: 'Fira Code', monospace;
+    cursor: default;
+}
+
+#fr {
+    font-size: 0.5rem;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+.desc {
+    font-family: 'Fira Code', monospace;
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--cc);
+}
+
+a.link {
+    font-family: 'Fira Code', monospace;
+    background-color: var(--cf);
+    color: var(--cc);
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.link {
+    border-radius: 0.1rem;
+}
+
+.link:last-child {
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.link:not(:first-child) {
+    margin-top: 0.3rem;
+}
+
+.link:hover {
+    transition: all 0.1s;
+    background-color: var(--cb);
+    color: var(--ca);
+    box-shadow: 0rem 0rem 1rem var(--cb-t);
+    transform: scale(1.01, 1.01);
+}
+
+.link-container {
+    margin-top: 0.1rem;
+    padding: 0.3rem;
+    border: solid 0.1rem var(--cf);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.link-container:hover {
+    transition: all 0.1s;
+    border: solid 0.1rem var(--cb);
+    box-shadow: 0rem 0rem 0.5rem var(--cb-t);
+}
+
+.navs {
+    margin: 0 auto;
+    display: table;
+}
+
+.navs > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.navs > .sep {
+    width: 2rem;
+}
+
+.nav {
+    transition: transform 0.1s;
+    margin-top: 1rem;
+    width: 250px;
+}
+
+.nav:hover {
+    transition: transform 0.1s;
+    transform: scale(1.1);
+}
+
+.nav-title {
+    background-color: var(--cf);
+    margin-top: 0.1rem;
+    padding: 0.5rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.3rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.nav:hover > .nav-title {
+    background-color: var(--cb);
+    box-shadow: 0rem 0rem 0.5rem var(--cb-t);
+}
+
+.nav-title.desc {
+    color: var(--cg);
+    font-size: 0.5rem;
+}
+
+.center-div {
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+.center-div-no-vertical {
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: table;
+}
+
+.illustration {
+    margin: 0 auto;
+    display: table;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#portrait {
+    vertical-align: bottom;
+    background-color: var(--cf);
+    width: 250px;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    padding-top: 0.5rem;
+    padding-bottom: .5rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    box-sizing: border-box; 
+    width: 100%;
+    background-color: var(--cf);
+}
+
+.footer > .desc {
+    font-size: 0.5rem;
+    color: var(--cc);
+}
+
+.footer > .desc a {
+    color: var(--calt1);
+}
+
+.footer > .desc a:visited {
+    color: var(--calt2);
+}
+
+.page-title {
+    font-size: 1.5rem;
+}
+
+.desc.long {
+    max-width: 20rem;
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.sticky{
+    position: absolute;
+    left: calc(100vw - 2.5rem);
+    z-index: 100;
+    height: 100%;
+}
+
+.theme-togglers {
+    position: sticky;
+    top: 0rem;
+    width: 1.5rem;
+    transition: all 0.3s;
+    margin-top: 0.1rem;
+    padding: 0.3rem;
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+.radio {
+    width: 1.3rem;
+    opacity: 0.5;
+    font-family: 'Fira Code', monospace;
+    
+    color: var(--cc);
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding-left: 0.01rem;
+    padding-right: 0.09rem;
+    cursor: pointer;  
+}
+
+.radio:not(:first-child) {
+    margin-top: 0.15rem;
+}
+
+.radio.toggled {
+    background-color: var(--cb);
+    opacity: 0.7;
+}
+
+@media (max-aspect-ratio: 1/1) {
+
+
+    .content {
+        background-color: var(--cg);
+        background-image: none;
+        width: 100vw;
+    }
+
+    .center-div {
+        padding: 0.5rem;
+        padding-top: 0;
+        margin: 0 auto;
+        margin-top: -0.5rem;
+        display: table;
+    }
+
+    .center-div-no-vertical {
+        margin-top: 0.5rem;
+    }
+
+    .title {
+        margin-top: 1rem;
+        font-size: 2.2rem;
+        line-height: 1.5rem;
+        text-align: left;
+    }
+
+    .desc {
+        font-size: 0.5rem;
+    }
+
+    #nougaret {
+        font-style: italic;
+        font-size: 1.5rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .mobile > .desc:first-child {
+        margin-top: 1rem;
+    }
+
+    .desc-container > .desc {
+        text-align: left;
+        margin-top: 0rem;
+    }
+
+    .navs > .sep {
+        display: none;
+    }
+
+    .navs > .nav {
+        display: block;
+    }
+
+    .footer > .desc {
+        font-size: 0.45rem;
+    }
+
+    .page-title {
+        margin-top: 0rem;
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .radio {
+        width: 0.9rem;
+        font-size: 0.7rem;
+        padding-left: 0.03rem;
+        padding-right: 0.07rem;
+        padding-bottom: 0.05rem;
+    }
+
+    .sticky {
+        left: calc(100vw - 1.7rem);
+    }
+
+    .theme-togglers {
+        width: 0.5rem;
+        top: 0rem;
+    }
+}
