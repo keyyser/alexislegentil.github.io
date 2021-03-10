@@ -232,7 +232,7 @@ a.link {
     padding-bottom: .5rem;
     padding-left: 0.3rem;
     padding-right: 0.3rem;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     width: 100%;
     background-color: var(--cf);
 }
@@ -255,8 +255,8 @@ a.link {
 }
 
 .desc.long {
-    max-width: 20rem;
-    text-align: left;
+    max-width: 22.5rem;
+    text-align: justify;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -283,7 +283,7 @@ a.link {
     width: 1.3rem;
     opacity: 0.5;
     font-family: 'Fira Code', monospace;
-    
+
     color: var(--cc);
     margin: 0 auto;
     display: block;
@@ -292,7 +292,7 @@ a.link {
     border-radius: 1rem;
     padding-left: 0.01rem;
     padding-right: 0.09rem;
-    cursor: pointer;  
+    cursor: pointer;
 }
 
 .radio:not(:first-child) {
